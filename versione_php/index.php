@@ -14,16 +14,13 @@
         <div class="container">
         <?php foreach ($dischi as $cd) { ?>
             <div class="cd">
-                <img src=<?php echo $cd["poster"] ?> alt="">
-                <p class="white margBottom"id="titolo"></p>
-                <p class="white margBottom"></p>
-                <p class="white margBottom"></p>
-                <p class="white margBottom"></p>
+                <img src=<?php echo $cd["poster"]; ?> alt="">
+                <p class="white margBottom"id="titolo"> <?php echo $cd["title"]; ?> </p>
+                <p class="white margBottom"> <?php echo $cd["author"]; ?> </p>
+                <p class="white margBottom"> <?php echo $cd["genre"]; ?> </p>
+                <p class="white margBottom"> <?php echo $cd["year"]; ?> </p>
             </div>
         <?php } ?>
-
         </div>
-
-
     </body>
 </html>

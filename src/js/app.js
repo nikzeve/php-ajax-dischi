@@ -4,7 +4,7 @@ $(document).ready(function() {
     var template_function = Handlebars.compile(template_html);
 
     $.ajax({
-        url:  '../database/lista_cd.php',
+        url:  '../database/lista_cd_2.php',
         method: 'GET',
         success: function(data) {
             console.log(data);
