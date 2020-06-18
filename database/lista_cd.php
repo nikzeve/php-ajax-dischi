@@ -75,8 +75,9 @@ $dischi = [
 
 // var_dump($dischi);
 
-
+if ($_GET) {
     header('Content-Type: application/json');
     echo json_encode($dischi);
+}
 
 ?>
