@@ -93,15 +93,17 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$.ajax({
-  url: 'lista_cd.php',
-  method: 'GET',
-  success: function success(data) {
-    console.log(data);
-  },
-  error: function error() {
-    console.log('si è verificato un errore');
-  }
+$(document).ready(function () {
+  $.ajax({
+    url: '../database/lista_cd.php',
+    method: 'GET',
+    success: function success(data) {
+      console.log(data);
+    },
+    error: function error() {
+      console.log('si è verificato un errore');
+    }
+  });
 });
 
 /***/ }),
